@@ -1,1 +1,1 @@
-web: bash bin/deploy 
+web: npm run dev 
