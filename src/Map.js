@@ -108,7 +108,6 @@ class Map extends Component {
         {...this.state.viewport}
         width="100vw"
         height="100vh"
-        mapStyle="mapbox://styles/mapbox/outdoors-v11"
         onViewportChange={this.handleViewportChange}
         mapboxApiAccessToken={MAPBOX_TOKEN}
         onDblClick={this.handleMarkLocation}
