@@ -12,6 +12,7 @@ jobs:
     strategy:
       matrix:
         node-version: [12.x]
+        ruby-version: [2.5.x]
 
     steps:
     - uses: actions/checkout@v2
@@ -26,6 +27,6 @@ jobs:
     - name: Use Ruby
       uses: actions/setup-ruby@v1
       with:
-        ruby-version: [2.6]
+        ruby-version: ${{ matrix.ruby-version }}
     - run: gem install dpl
     - run: dpl --provider=heroku --app=f-react-map-gl --api-key=${{ secrets.HEROKU_API_KEY }}
