@@ -23,4 +23,4 @@ jobs:
     - run: npm run build --if-present
     - run: apt-get install ruby-dev
     - run: gem install dpl
-    - run: dpl --provider=heroku --app=f-react-map-gl --api-key=${{ secret.HEROKU_API_KEY }}
+    - run: dpl --provider=heroku --app=f-react-map-gl --api-key=${{ secrets.HEROKU_API_KEY }}
