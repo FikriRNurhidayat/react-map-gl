@@ -1,0 +1,12 @@
+#!/usr/env node
+
+const app = require('../server/index.js')
+const port = process.env.PORT || 8000;
+
+app.listen(
+  port,
+  () => [`Server started at ${Date()}`, `Listening on port ${port}`]
+          .forEach(
+             msg => console.log(msg)
+          )
+)
