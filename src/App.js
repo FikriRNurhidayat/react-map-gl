@@ -2,7 +2,6 @@ import React, {
   Component
 } from 'react'
 import './App.css'
-import 'antd/dist/antd.css'
 import Map from './Map'
 
 class App extends Component {
